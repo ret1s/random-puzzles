@@ -16,7 +16,7 @@ for j in range(N): # number of items
     for i in range(M): # capacity
         capacity = i + 1
         if capacity >= size[j]:
-            last_size = max(i - size[j], 0)
+            last_size = max(i - size[j], 0) # cost[-1] is the last item of cost lol
             if cost[i] < cost[last_size] + val[j]:
                 cost[i] = cost[last_size] + val[j]
                 best[i] = j + 1
