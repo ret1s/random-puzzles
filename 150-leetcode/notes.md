@@ -12,5 +12,5 @@ Today, I practiced problems about hash map.
 Here are some notes:
 - In twoSum problem, using hash map data structure is a good approach if the array is unsorted. When the given array is sorted, using two pointers will be a better approach. 
 - In canConstruct, we learn two basic functions can be used in hash map data structure: _find_ and _count_. To wrap up:
-  - _find_: searches the container for and element with k as key and return an _iterator_ to it if found, otherwise it returns an iterator to unordered_map::end (the element past the end of the container).
-  - _count_: searches the container for elements whose key is k and returns the number of elements found. Because unordered_map containers do not allow for duplicate keys, this means that the function actually returns 1 if an element with that key exists in the container, and zero otherwise.
+1 _find_: searches the container for and element with k as key and return an _iterator_ to it if found, otherwise it returns an iterator to unordered_map::end (the element past the end of the container).
+2 _count_: searches the container for elements whose key is k and returns the number of elements found. Because unordered_map containers do not allow for duplicate keys, this means that the function actually returns 1 if an element with that key exists in the container, and zero otherwise.
