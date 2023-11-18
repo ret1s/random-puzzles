@@ -1,0 +1,3 @@
+# 18/11/2023
+### BINARY SEARCH TREE
+- To implement Breadth First Search in a Binary Tree, we use queue data structure. First, we check if the root of the BT is null or not. If it's a null pointer, we return the function. Otherwise, we print out the value of root then push the left and right child of it into the queue. Next, we use a while loop to implement BFS. In detail, we check the front value of the queue. If it's not null pointer, we print out its value and push the left and right child of it and then pop it out of the queue. Repeat this procedure until the queue is empty.  
