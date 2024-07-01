@@ -15,3 +15,8 @@ Here are some notes:
   + _find_: searches the container for and element with k as key and return an _iterator_ to it if found, otherwise it returns an iterator to unordered_map::end (the element past the end of the container).
   + _count_: searches the container for elements whose key is k and returns the number of elements found. Because unordered_map containers do not allow for duplicate keys, this means that the function actually returns 1 if an element with that key exists in the container, and zero otherwise.
 - In isIsomorphic, we have to craft two hash maps for pairs of character in two strings so that we can keep the strong connection between two characters (both character are key).  
+---
+### 10/02/2023
+1. Remove Element
+2. Remove Duplicates
+3. Majority Element
