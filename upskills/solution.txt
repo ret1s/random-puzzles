@@ -1,0 +1,87 @@
+def q1(n, a, r):
+    # Sn = [a(1-rn)] / (1-r) formula as google
+    # return a * (1 - r**n) / (1 - r) => solution using formula
+    total = 0
+    for i in range(n):
+        total += a * r**i
+    return total
+
+# ==============================================
+
+def q2(requested_amount, availabe=[]):
+    total = 0
+    res = {}
+    while total < requested_amount:
+        current = max(available)
+        res[current] = math.floor(requested_amount/current)
+        total += current*res[current]
+        requested_amount -= total
+        available.remove(current)
+        # error
+        if len(availabe) == 0 and total < requested_amount:
+            raise ValueError("Requested amount cannot be multipled with available values")
+    
+    # print out result
+    for a, b in res:
+        print(f'{b} money notes of {a}')
+        
+# ==============================================
+
+def q3(N, M):
+    # if M < N:
+    #     raise ValueError("Invalid input")
+
+    fib_list = []
+    a, b = 0, 1
+    index = 0
+    
+    while index <= M:
+        if index >= N:
+            fib_list.append(a)
+        index += 1
+        a, b = b, a + b
+    
+    return sum(fib_list)
+
+# ==============================================
+
+def q4(paragraph):
+    words = paragraph.lower().split()
+    # print(words)
+    word_counts = {}
+    res = []
+    # dictionary stores occurence number of words
+    for word in words:
+        word_counts[word] = word_counts.get(word, 0) + 1
+    
+    max_count = max(word_counts.values())
+    
+    for word, c in word_counts.items():
+        if c == max_count:
+            res.append(word)
+            
+    return res
+
+# ==============================================
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+class BinaryTree:
+    def __init__(self, root):
+        self.root = root
+
+    def getMaxDept(self, node=None):
+        if node == None:
+            node = self.root
+            
+        if self.node == None:
+            return 0
+        
+        lh = self.getMaxDept(node.left)
+        rh = self.getMaxDept(node.right)
+        
+        return max(lh, rh) + 1
