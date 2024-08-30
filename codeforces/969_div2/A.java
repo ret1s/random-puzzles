@@ -2,7 +2,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-public final class Doras_Set
+public class Doras_Set
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
