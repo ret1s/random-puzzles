@@ -1,6 +1,9 @@
+import java.util.*;
+
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> count = new HashMap<>();
+        @SuppressWarnings("unchecked")
         List<Integer>[] freq = new List[nums.length + 1];
 
         for (int i = 0; i < freq.length; i++) {

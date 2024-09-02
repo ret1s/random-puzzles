@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public boolean hasDuplicate(int[] nums) {
         Set<Integer> uniques = new HashSet<>();

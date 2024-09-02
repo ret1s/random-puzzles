@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
 
     public String encode(List<String> strs) {
