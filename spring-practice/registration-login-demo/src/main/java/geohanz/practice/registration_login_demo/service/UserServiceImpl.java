@@ -6,11 +6,13 @@ import geohanz.practice.registration_login_demo.entity.User;
 import geohanz.practice.registration_login_demo.repo.RoleRepository;
 import geohanz.practice.registration_login_demo.repo.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
     private RoleRepository roleRepository;
