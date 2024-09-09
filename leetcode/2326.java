@@ -10,13 +10,6 @@
  */
 class Solution {
     public int[][] spiralMatrix(int m, int n, ListNode head) {
-        int size = 0;
-        ListNode T = head;
-        while (T != null) {
-            size++;
-            T = T.next;
-        }
-
         int[][] res = new int[m][];
         for (int i = 0; i < m; i++) {
             res[i] = new int[n];
