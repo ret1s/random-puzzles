@@ -21,3 +21,4 @@ class Solution {
 
         return stack.size();
     }
+}
