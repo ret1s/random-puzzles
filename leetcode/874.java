@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 class Solution {
     public int robotSim(int[] commands, int[][] obstacles) {
@@ -8,7 +9,7 @@ class Solution {
         Set<String> obstacleSet = new HashSet<>();
         for (int[] obstacle : obstacles) {
             obstacleSet.add(obstacle[0] + "," + obstacle[1]);
-        }       
+        }
         for (int c : commands) {
             if (c == -1) {
                 d = (d + 1)%4;
