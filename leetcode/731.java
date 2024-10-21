@@ -23,7 +23,7 @@ class MyCalendarTwo {
     for(Event e : overLapBookings)
     {
       if(isOverlap(e, start, end))
-      return false;  
+      return false;
     } 
 
     for(Event e : bookings)
