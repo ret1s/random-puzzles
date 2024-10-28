@@ -8,7 +8,7 @@ var createCounter = function(init) {
         increment:()  => ++cur,
         decrement:() => --cur,
         reset:() => cur = init,
-    } 
+    }
 };
 
 /**
