@@ -17,7 +17,7 @@ class Solution {
                 if (matrix[i][j] == 1) {
                     dp[i][j] = 1 + Math.min(Math.min(dp[i][j-1], dp[i-1][j]), dp[i-1][j-1]);
                 }
-                ans += dp[i][j];
+                ans += dp[i][j]
             }
         }
         return ans;

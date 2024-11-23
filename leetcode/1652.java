@@ -1,6 +1,6 @@
 class Solution {
     public int[] decrypt(int[] code, int k) {
-    int n = code.length;     
+    int n = code.length;
     int ans[] = new int[n];
     int start = 0, end =0; 
     if(k==0)
