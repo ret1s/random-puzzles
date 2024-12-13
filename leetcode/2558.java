@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 class Solution {
     public long pickGifts(int[] g, int k) {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
